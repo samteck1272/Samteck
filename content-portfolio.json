@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "title": "CV & Application Letter",
+      "description": "Fakkeenya CV fi xalayaa iyyannoo nu qopheessine — asitti fuula fuulaan ilaaluu dandeessa.",
+      "image": ""
+    },
+    {
+      "title": "Hardware Repair",
+      "description": "Suuraa hojii sirreessa computer & laptop dursaa fi booda (before/after) asitti dabalama.",
+      "image": ""
+    },
+    {
+      "title": "Software & OS Setup",
+      "description": "Fakkeenya install-oota Windows, software fi maintenance hojjenne.",
+      "image": ""
+    },
+    {
+      "title": "Passport Application",
+      "description": "Adeemsa guutuu application online paaspoortii — fakkeenya waraqaa nu ergiten asitti mul'ata.",
+      "image": ""
+    }
+  ]
+}

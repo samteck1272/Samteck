@@ -1,0 +1,56 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "settings"
+    label: "Odeeffannoo Dhaabbataa"
+    files:
+      - file: "content/settings.json"
+        label: "General Settings"
+        name: "settings"
+        fields:
+          - { label: "Maqaa Dhaabbataa", name: "business_name", widget: "string" }
+          - { label: "Tagline (jecha gabaabaa)", name: "tagline", widget: "string" }
+          - { label: "Bakka (Location)", name: "location", widget: "string" }
+          - { label: "Bilbila 1", name: "phone1", widget: "string" }
+          - { label: "Bilbila 2", name: "phone2", widget: "string", required: false }
+          - { label: "WhatsApp (lakkoofsa qofa, +251 malee)", name: "whatsapp", widget: "string" }
+          - { label: "Telegram Username (@ malee)", name: "telegram", widget: "string" }
+          - { label: "Instagram Username (@ malee)", name: "instagram", widget: "string" }
+          - { label: "Facebook Page/Profile Name", name: "facebook", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Suuraa Hero (gubbaa)", name: "hero_image", widget: "image" }
+
+  - name: "services"
+    label: "Tajaajiloota"
+    files:
+      - file: "content/services.json"
+        label: "Tarree Tajaajilaa"
+        name: "services"
+        fields:
+          - label: "Tajaajiloota"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.text}}"
+            fields:
+              - { label: "Barreeffama Tajaajilaa", name: "text", widget: "string" }
+
+  - name: "portfolio"
+    label: "Hojii Dhiyeenya"
+    files:
+      - file: "content/portfolio.json"
+        label: "Hojiiwwan"
+        name: "portfolio"
+        fields:
+          - label: "Hojiiwwan (carousel)"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Mata duree", name: "title", widget: "string" }
+              - { label: "Ibsa gabaabaa", name: "description", widget: "text" }
+              - { label: "Suuraa (yoo qabaatte)", name: "image", widget: "image", required: false }
